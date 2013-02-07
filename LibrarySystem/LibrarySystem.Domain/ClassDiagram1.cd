@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LibrarySystem.Domain.Loan">
+    <Position X="7" Y="3" Width="1.5" />
+    <AssociationLine Name="Member" Type="LibrarySystem.Domain.Member" FixedFromPoint="true">
+      <Path>
+        <Point X="7.562" Y="3" />
+        <Point X="7.562" Y="2.046" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQgAIAAAAAABAEAAAAAA=</HashCode>
+      <FileName>Loan.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Copy" />
+      <Property Name="Member" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LibrarySystem.Domain.Copy">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Copy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Title" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LibrarySystem.Domain.Member">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <AssociationLine Name="Loans" Type="LibrarySystem.Domain.Loan">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.723" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Family" Type="LibrarySystem.Domain.Member" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.529" Y="0.75" />
+        <Point X="7.529" Y="0.167" />
+        <Point X="8.25" Y="0.167" />
+        <Point X="8.25" Y="0.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.735" Y="0.268" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAEAAABAA=</HashCode>
+      <FileName>Member.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Loans" />
+      <Property Name="Family" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LibrarySystem.Domain.Shelf">
+    <Position X="1.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAIAQAAAAAAAAgAAAAAAAIAgQAAQAA=</HashCode>
+      <FileName>Shelf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibrarySystem.Domain.Title">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAQAAAAAEgAAAAAAAAAQAAAEAAIAAAAAACAA=</HashCode>
+      <FileName>Title.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Shelf" />
+      <Property Name="Category" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Copies" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LibrarySystem.Domain.Fine">
+    <Position X="9.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAACACAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Fine.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Loan" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="LibrarySystem.Domain.Category" Collapsed="true">
+    <Position X="1.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAQAAAAIAAAAAIAAAAAAAAAAAAAAEAAAAAg=</HashCode>
+      <FileName>Category.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
